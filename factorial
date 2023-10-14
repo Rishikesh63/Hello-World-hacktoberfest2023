@@ -1,0 +1,11 @@
+function factorialRecursive(n) {
+  if (n === 0 || n === 1) {
+    return 1;
+  } else {
+    return n * factorialRecursive(n - 1);
+  }
+}
+
+const num = 5;
+const result = factorialRecursive(num);
+console.log(`Factorial of ${num} is ${result}`);
